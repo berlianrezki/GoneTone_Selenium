@@ -38,6 +38,7 @@ class TestRegist(unittest.TestCase):
         browser.get("http://barru.pythonanywhere.com/daftar") # buka situs
         time.sleep(3)
         browser.find_element(By.ID,"signUp").click()
+<<<<<<< HEAD
         time.sleep(1)
         browser.find_element(By.ID, "name_register").send_keys("GoneTone02")
         time.sleep(1)
@@ -45,6 +46,15 @@ class TestRegist(unittest.TestCase):
         time.sleep(1)
         browser.find_element(By.ID, "password_register").send_keys("123456")
         time.sleep(1)
+=======
+        time.sleep(1)
+        browser.find_element(By.ID, "name_register").send_keys("GoneTone02")
+        time.sleep(1)
+        browser.find_element(By.ID, "email_register").send_keys("GoneTone02@gmail.com")
+        time.sleep(1)
+        browser.find_element(By.ID, "password_register").send_keys("123456")
+        time.sleep(1)
+>>>>>>> d421f2586efdc41bc7ad5b668f73d04ca2a7b9aa
         browser.find_element(By.ID,"signup_register").click() # klik tombol sign in
         time.sleep(1)
 
@@ -60,3 +70,4 @@ class TestRegist(unittest.TestCase):
 
 if __name__ == "__main__": 
     unittest.main()
+
